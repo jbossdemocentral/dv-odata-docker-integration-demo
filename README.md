@@ -2,10 +2,6 @@
 ## dv-odata-docker
 This project builds a [docker](http://www.docker.io) container for running [JBoss Data Virtualization](http://http://www.redhat.com/products/jbossenterprisemiddleware/data-virtualization/) 6.0.0.GA with a OData Multisource Virtual Database.  
 
-## Prerequisites
-1. Install [Docker](https://www.docker.io/gettingstarted/#1)
-2. Download JBoss Data Virtualization from [jboss.org.](http://jboss.org/products/#IBP)
-2. Put the downloaded file: jboss-dv-installer-6.0.0.GA-redhat-4.jar into dv-odata-docker/software
 
 ## Steps to Run Demo
 
