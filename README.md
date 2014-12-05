@@ -25,6 +25,7 @@ STEP 2: Build, start the container and grab the IP which is returned from startn
 		$ docker run -P -d -t jbossdv600  
 -Get the Container IP  
 		$ docker inspect <$containerID>   
+  
 STEP 3: Browse the Data Virtualization and the Data  
 -All Data  
 		http://CONTAINER-IP:8080/odata/CustomerContextVDB/CustomerContextView.CustomerContext?$format=json  
