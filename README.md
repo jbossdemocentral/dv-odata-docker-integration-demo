@@ -17,7 +17,7 @@ STEP 1: Clone the Repository and Download Data Virtualization
 STEP 2: Build, start the container and grab the IP which is returned from startng the container  
 -Build Image  
 		$ docker build -t jbossdv600 .  
--Start Container
+-Start Container  
 		$ docker run -P -d -t jbossdv600  
 -Get the Container IP  
 		$ docker inspect <$containerID>   
