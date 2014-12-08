@@ -32,7 +32,6 @@ RUN mkdir $INSTALLDIR && \
    mkdir $INSTALLDIR/support && \
    mkdir $INSTALLDIR/support/data && \
    mkdir $INSTALLDIR/support/vdb
-
 ADD software/jboss-dv-installer-6.0.0.GA-redhat-4.jar $INSTALLDIR/software/jboss-dv-installer-6.0.0.GA-redhat-4.jar 
 ADD support/teiid-security-users.properties $INSTALLDIR/support/teiid-security-users.properties
 ADD support/teiid-security-roles.properties $INSTALLDIR/support/teiid-security-roles.properties
@@ -49,23 +48,11 @@ RUN mv $INSTALLDIR/support/vdb $INSTALLDIR/jboss-eap-6.1/standalone/deployments
 RUN mv $INSTALLDIR/support/standalone.dv.xml $INSTALLDIR/jboss-eap-6.1/standalone/configuration/standalone.xml
 RUN rm -rf $INSTALLDIR/jboss-eap-6.1/standalone/configuration/standalone_xml_history/current
 
-# Command line shortcuts
-RUN echo "export JAVA_HOME=/usr/lib/jvm/jre" >> $HOME/.bash_profile
-RUN echo "alias ll='ls -l --color=auto'" >> $HOME/.bash_profile
-RUN echo "alias grep='grep --color=auto'" >> $HOME/.bash_profile
-RUN echo "alias c='clear'" >> $HOME/.bash_profile
-RUN echo "alias sdv='$HOME/dv/jboss-eap-6.1/bin/standalone.sh -c standalone.xml'" >> $HOME/.bash_profile
-RUN echo "alias xdv='$HOME/dv/jboss-eap-6.1/bin/jboss-cli.sh --commands=connect,:shutdown'" >> $HOME/.bash_profile
-
 # start.sh
-USER root
-RUN chown -R jboss:jboss $INSTALLDIR/jboss-eap-6.1/standalone/data
-RUN chown -R jboss:jboss $INSTALLDIR/jboss-eap-6.1/standalone/deployments
-RUN chown -R jboss:jboss $INSTALLDIR/jboss-eap-6.1/standalone/configuration/standalone.xml
-RUN echo "#!/bin/sh"
-RUN echo "echo JBoss Data Virtualization Start script" >> $HOME/run.sh
-RUN echo "runuser -l jboss -c '$HOME/dv/jboss-eap-6.1/bin/standalone.sh -c standalone.xml -b 0.0.0.0 -bmanagement 0.0.0.0'" >> $HOME/run.sh
-RUN chmod +x $HOME/run.sh
+#USER root
+#RUN chown -R jboss:jboss $INSTALLDIR/jboss-eap-6.1/standalone/data
+#RUN chown -R jboss:jboss $INSTALLDIR/jboss-eap-6.1/standalone/deployments
+#RUN chown -R jboss:jboss $INSTALLDIR/jboss-eap-6.1/standalone/configuration/standalone.xml
 
 # Clean up
 RUN rm -rf $INSTALLDIR/support
@@ -73,6 +60,6 @@ RUN rm -rf $INSTALLDIR/software
 
 EXPOSE 22 5432 8080 9990 27017 31000
 
-CMD /home/jboss/run.sh
+CMD runuser -l jboss -c '$HOME/dv/jboss-eap-6.1/bin/standalone.sh -c standalone.xml -b 0.0.0.0 -bmanagement 0.0.0.0'
 
 # Finished
