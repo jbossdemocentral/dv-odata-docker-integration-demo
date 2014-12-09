@@ -7,16 +7,16 @@ This project builds a [docker](http://www.docker.io) container for running [JBos
 
 ## Steps to Run the Demo
 
-Management Credentials:  
+**Management Credentials:**  
 admin/redhat1!  
-Datavirtualization Credentials:  
+**Datavirtualization Credentials:**  
 user/user  
   
-STEP 1: Clone the Repository and Download Data Virtualization  
+**STEP 1:** Clone the Repository and Download Data Virtualization  
 -git clone of the repository  
 -Put the Data Virutalization Download, jboss-dv-installer-6.0.0.GA-redhat-4.jar, into the software folder  
   
-STEP 2: Build, start the container and grab the IP which is returned from startng the container  
+**STEP 2:** Build, start the container and grab the IP which is returned from startng the container  
 -Build Image  
 		$ docker build -t jbossdv600 .  
 -Start Container  
@@ -24,7 +24,7 @@ STEP 2: Build, start the container and grab the IP which is returned from startn
 -Get the Container IP  
 		$ docker inspect <$containerID>   
   
-STEP 3: Browse the Data Virtualization and the Data  
+**STEP 3:** Browse the Data Virtualization and the Data  
 -All Data  
 		http://CONTAINER-IP:8080/odata/CustomerContextVDB/CustomerContextView.CustomerContext?$format=json  
 -Specific Entity  
@@ -36,6 +36,6 @@ STEP 3: Browse the Data Virtualization and the Data
 -Dashboard  
 		http://CONTAINER-IP:8080/dashboard/  
   
-As Easy as 1,2,3....
+**As Easy as 1,2,3....**
 
 ![alt text](https://raw.githubusercontent.com/kpeeples/dv-odata-docker-integration-demo/master/images/dvodatadocker.jpeg "Teiid VDBs")
