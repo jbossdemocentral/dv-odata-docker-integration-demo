@@ -3,8 +3,6 @@
 
 This project builds a [docker](http://www.docker.io) container for running [JBoss Data Virtualization](http://http://www.redhat.com/products/jbossenterprisemiddleware/data-virtualization/) 6.0.0.GA with a OData Multisource Virtual Database.  
 
-
-
 ## Steps to Run the Demo
 
 Management Credentials:  
@@ -37,3 +35,5 @@ STEP 3: Browse the Data Virtualization and the Data
 		http://CONTAINER-IP:8080/dashboard/  
   
 As Easy as 1,2,3....
+
+![alt text](https://raw.githubusercontent.com/kpeeples/dv-odata-docker-integration-demo/master/images/dvodatadocker.jpeg "Teiid VDBs")
