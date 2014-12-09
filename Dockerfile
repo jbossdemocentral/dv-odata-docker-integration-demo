@@ -54,6 +54,6 @@ RUN rm -rf $INSTALLDIR/software
 
 EXPOSE 22 5432 8080 9990 27017 31000
 
-CMD runuser -l jboss -c '$HOME/dv/jboss-eap-6.1/bin/standalone.sh -c standalone.xml -b 0.0.0.0 -bmanagement 0.0.0.0'
+CMD $HOME/dv/jboss-eap-6.1/bin/standalone.sh -c standalone.xml -b 0.0.0.0 -bmanagement 0.0.0.0
 
 # Finished

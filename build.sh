@@ -2,7 +2,7 @@
 if [ -f "software/jboss-dv-installer-6.0.0.GA-redhat-4.jar" ]
 then
         
-	echo "Building the JBoss Data Virtualization 6.0.0 container for workshop"
+	echo "Building the JBoss Data Virtualization 6.0.0 container"
 	docker build -t jbossdv600 .
 else
 	echo "File software/jboss-dv-installer-6.0.0.GA-redhat-4.jar not found."
