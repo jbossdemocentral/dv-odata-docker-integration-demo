@@ -2,7 +2,7 @@
 <AutomatedInstallation langpack="eng">
 <com.izforge.izpack.panels.HTMLLicencePanel id="HTMLLicencePanel"/>
 <com.izforge.izpack.panels.TargetPanel id="DirectoryPanel">
-<installpath>/home/jboss/dv</installpath>
+<installpath>/opt/jboss/dv</installpath>
 </com.izforge.izpack.panels.TargetPanel>
 <com.izforge.izpack.panels.UserInputPanel id="security">
 <userInput>
