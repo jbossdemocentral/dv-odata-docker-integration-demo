@@ -1,7 +1,9 @@
  
 ## OData with Data Virtualization and Docker
 
-![alt text](https://raw.githubusercontent.com/kpeeples/dv-odata-docker-integration-demo/master/images/dvodatadockeroverview.jpg "Teiid VDBs")  This project builds a [docker](http://www.docker.io) container for running [JBoss Data Virtualization](http://http://www.redhat.com/products/jbossenterprisemiddleware/data-virtualization/) 6.0.0.GA with a OData Multisource Virtual Database.  
+![alt text](https://raw.githubusercontent.com/kpeeples/dv-odata-docker-integration-demo/master/images/dvodatadockeroverview.jpg "Teiid VDBs")  
+
+This project builds a [docker](http://www.docker.io) container for running [JBoss Data Virtualization](http://http://www.redhat.com/products/jbossenterprisemiddleware/data-virtualization/) 6.0.0.GA with a OData Multisource Virtual Database.  
 
 ## Steps to Run the Demo
 
