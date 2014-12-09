@@ -48,12 +48,6 @@ RUN mv $INSTALLDIR/support/vdb $INSTALLDIR/jboss-eap-6.1/standalone/deployments
 RUN mv $INSTALLDIR/support/standalone.dv.xml $INSTALLDIR/jboss-eap-6.1/standalone/configuration/standalone.xml
 RUN rm -rf $INSTALLDIR/jboss-eap-6.1/standalone/configuration/standalone_xml_history/current
 
-# start.sh
-#USER root
-#RUN chown -R jboss:jboss $INSTALLDIR/jboss-eap-6.1/standalone/data
-#RUN chown -R jboss:jboss $INSTALLDIR/jboss-eap-6.1/standalone/deployments
-#RUN chown -R jboss:jboss $INSTALLDIR/jboss-eap-6.1/standalone/configuration/standalone.xml
-
 # Clean up
 RUN rm -rf $INSTALLDIR/support
 RUN rm -rf $INSTALLDIR/software

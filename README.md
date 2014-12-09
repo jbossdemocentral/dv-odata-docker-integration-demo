@@ -1,5 +1,5 @@
  
-## dv-odata-docker
+## OData with Data Virtualization and Docker
 This project builds a [docker](http://www.docker.io) container for running [JBoss Data Virtualization](http://http://www.redhat.com/products/jbossenterprisemiddleware/data-virtualization/) 6.0.0.GA with a OData Multisource Virtual Database.  
 
 
