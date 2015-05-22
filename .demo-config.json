@@ -1,0 +1,19 @@
+{
+  "name":"Data Virtualization Customer Context and Docker Demo",
+  "summary":"This demo shows an example of how to create a docker container with DV with a VDB loaded",
+  "author":"Kenneth Peeples",
+  "category":"dv",
+  "categories":["dv"],
+  "level":"beginning",
+  "published":true,
+  "prerequisites":"Java VM 1.6 or 1.7, Maven",
+  "targetProduct":"JBoss Data Virtualization",
+  "productVersion":"JBoss DV 6.0",
+  "technologies": ["Teiid","JBoss EAP","JBoss DV"],
+  "links": [ 
+    {
+      "name":"Code",
+      "url":"https://github.com/jbossdemocentral/dv-odata-docker-integration-demo"
+    }
+  ]
+}
