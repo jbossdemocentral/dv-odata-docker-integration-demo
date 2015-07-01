@@ -5,19 +5,19 @@
 
 This project builds a [docker](http://www.docker.io) container for running [JBoss Data Virtualization](http://http://www.redhat.com/products/jbossenterprisemiddleware/data-virtualization/) 6.0.0.GA with a OData Multisource Virtual Database.  
 
-This project was tested on Fedora 21 with Docker version:
-[root@localhost ~]# docker version
-Client version: 1.6.0
-Client API version: 1.18
-Go version (client): go1.4.2
-Git commit (client): 350a636/1.6.0
-OS/Arch (client): linux/amd64
-Server version: 1.6.0
-Server API version: 1.18
-Go version (server): go1.4.2
-Git commit (server): 350a636/1.6.0
-OS/Arch (server): linux/amd64
-
+This project was tested on Fedora 21 with Docker version:  
+[root@localhost ~]# docker version  
+Client version: 1.6.0  
+Client API version: 1.18  
+Go version (client): go1.4.2  
+Git commit (client): 350a636/1.6.0  
+OS/Arch (client): linux/amd64  
+Server version: 1.6.0  
+Server API version: 1.18  
+Go version (server): go1.4.2  
+Git commit (server): 350a636/1.6.0  
+OS/Arch (server): linux/amd64  
+  
 ## Steps to Run the Demo
 
 **Management Credentials:**  
